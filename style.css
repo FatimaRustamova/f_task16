@@ -1,0 +1,900 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  padding: 30px 0;
+}
+nav .container1 {
+  max-width: 1700px;
+  margin: auto;
+  padding: 0 32px;
+}
+nav .container1 .nav1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container1 .nav1 .home ul {
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+nav .container1 .nav1 .home ul li {
+  list-style-type: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+}
+nav .container1 .nav1 .home ul li:hover {
+  cursor: pointer;
+  color: red;
+  transition: all 0.3s ease-out;
+}
+nav .container1 .nav1 .home ul .hot {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: red;
+  top: -17px;
+  left: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav .container1 .nav1 .icon {
+  display: flex;
+  gap: 30px;
+}
+nav .container1 .nav1 .icon i {
+  font-size: 17px;
+}
+nav .container1 .nav1 .icon i:hover {
+  cursor: pointer;
+  color: red;
+  transition: all 0.3s ease;
+}
+nav .container1 .nav2 {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: gray;
+  width: 100%;
+  padding: 9px 0;
+}
+nav .container1 .nav2 div {
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  width: 120px;
+  padding: 8px 0;
+  text-align: center;
+  margin-right: 20px;
+}
+nav .container1 .nav2 div i {
+  font-size: 20px;
+}
+
+header {
+  width: 100%;
+  background-color: aliceblue;
+}
+header .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+header .container .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .head .shop {
+  width: 64%;
+}
+header .container .head .shop h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 95px;
+  color: #0b1c39;
+  letter-spacing: 1px;
+}
+header .container .head .shop p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  margin-top: 50px;
+}
+header .container .head .shop button {
+  width: 160px;
+  height: 50px;
+  border: 1px solid #4a4a4b;
+  background-color: #4a4a4b;
+  margin-top: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: white;
+}
+header .container .head .shop button:hover {
+  cursor: pointer;
+  background-color: red;
+  transition: all 0.5s ease;
+}
+header .container .head .watch {
+  width: 32%;
+  overflow: hidden;
+}
+header .container .head .watch img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  right: -100px;
+  z-index: 3;
+  -webkit-animation-name: watch;
+          animation-name: watch;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes watch {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.06;
+  }
+}
+
+@keyframes watch {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.06;
+  }
+}
+.sect1 {
+  width: 100%;
+  padding: 150px 0;
+}
+.sect1 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.sect1 .container .arrival {
+  padding: 60px 0;
+}
+.sect1 .container .arrival h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+}
+.sect1 .container .thermo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect1 .container .thermo .ball {
+  width: 32%;
+}
+.sect1 .container .thermo .ball .photo {
+  width: 100%;
+  overflow: hidden;
+}
+.sect1 .container .thermo .ball .photo img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s linear;
+}
+.sect1 .container .thermo .ball .photo img:hover {
+  scale: 1.05;
+}
+.sect1 .container .thermo .ball .price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.sect1 .container .thermo .ball .price a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #4a4a4b;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+.sect1 .container .thermo .ball .price p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: red;
+  font-size: 17px;
+}
+
+.sect2 {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.sect2 .picture1 {
+  width: 48%;
+  overflow: hidden;
+}
+.sect2 .picture1 img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: all 0.5s ease;
+  scale: 1.1;
+}
+.sect2 .picture1 img:hover {
+  scale: 1;
+}
+.sect2 .picture2 {
+  width: 24%;
+  overflow: hidden;
+}
+.sect2 .picture2 img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: all 0.5s ease;
+  scale: 1.1;
+}
+.sect2 .picture2 img:hover {
+  scale: 1;
+}
+.sect2 .picture3 {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sect2 .picture3 div {
+  width: 100%;
+  overflow: hidden;
+}
+.sect2 .picture3 div img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: all 0.5s ease;
+  scale: 1.1;
+}
+.sect2 .picture3 div img:hover {
+  scale: 1;
+}
+
+.sect3 {
+  width: 100%;
+  padding: 100px 0;
+}
+.sect3 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.sect3 .container .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sect3 .container .product .popular {
+  width: 60%;
+  margin-top: 100px;
+  text-align: center;
+}
+.sect3 .container .product .popular h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+}
+.sect3 .container .product .popular p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  margin-top: 15px;
+  color: gray;
+}
+.sect3 .container .product .gloves {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sect3 .container .product .gloves .item {
+  width: 32%;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.sect3 .container .product .gloves .item .hour {
+  width: 100%;
+  position: relative;
+}
+.sect3 .container .product .gloves .item .hour img {
+  width: 100%;
+}
+.sect3 .container .product .gloves .item .hour span {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+}
+.sect3 .container .product .gloves .item .hour:hover {
+  transition: all 0.5s ease;
+}
+.sect3 .container .product .gloves .item .hour:hover span {
+  display: flex;
+}
+.sect3 .container .product .gloves .item .etip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sect3 .container .product .gloves .item .etip a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #4a4a4b;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-top: 20px;
+}
+.sect3 .container .product .gloves .item .etip p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #4a4a4b;
+  font-size: 17px;
+  margin-top: 20px;
+}
+.sect3 .container .product .view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sect3 .container .product .view button {
+  width: 250px;
+  height: 50px;
+  border: 1px solid red;
+  background-color: red;
+  margin-top: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: white;
+  margin-top: 100px;
+}
+.sect3 .container .product .view button:hover {
+  cursor: pointer;
+  background-color: #4a4a4b;
+  transition: all 0.5s ease;
+}
+
+.sect4 {
+  width: 100%;
+  padding: 100px 0;
+}
+.sect4 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.sect4 .container .show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect4 .container .show .choice {
+  width: 42%;
+}
+.sect4 .container .show .choice h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+}
+.sect4 .container .show .choice p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  margin-top: 20px;
+  color: gray;
+}
+.sect4 .container .show .choice button {
+  margin-top: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+  background-color: red;
+}
+.sect4 .container .show .choice button:hover {
+  cursor: pointer;
+  background-color: #4a4a4b;
+  transition: all 0.5s ease;
+}
+.sect4 .container .show .rolex {
+  width: 50%;
+}
+.sect4 .container .show .rolex img {
+  width: 100%;
+}
+
+.sect5 {
+  width: 100%;
+  padding: 100px 0;
+}
+.sect5 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.sect5 .container .show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect5 .container .show .choice {
+  width: 42%;
+}
+.sect5 .container .show .choice h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+}
+.sect5 .container .show .choice p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  margin-top: 20px;
+  color: gray;
+}
+.sect5 .container .show .choice button {
+  margin-top: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+  background-color: red;
+}
+.sect5 .container .show .choice button:hover {
+  cursor: pointer;
+  background-color: #4a4a4b;
+  transition: all 0.5s ease;
+}
+.sect5 .container .show .rolex {
+  width: 50%;
+}
+.sect5 .container .show .rolex img {
+  width: 100%;
+}
+
+.sect6 {
+  width: 100%;
+  padding: 100px 0;
+}
+.sect6 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.sect6 .container .secure {
+  width: 100%;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  gap: 25px;
+}
+.sect6 .container .secure div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sect6 .container .secure div i {
+  font-size: 40px;
+}
+.sect6 .container .secure div h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+.sect6 .container .secure div p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: 17px;
+}
+
+.sect7 {
+  width: 100%;
+  padding: 50px 0;
+}
+.sect7 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.sect7 .container .info {
+  display: flex;
+  justify-content: space-between;
+}
+.sect7 .container .info .time {
+  width: 25%;
+}
+.sect7 .container .info .time p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: gray;
+  margin-top: 30px;
+}
+.sect7 .container .info .news {
+  width: 23%;
+}
+.sect7 .container .info .news h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.sect7 .container .info .news ul {
+  margin-top: 30px;
+}
+.sect7 .container .info .news ul li {
+  list-style-type: none;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+  font-size: 17px;
+  transition: all 0.4s ease-out;
+}
+.sect7 .container .info .news ul li:hover {
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
+
+footer {
+  width: 100%;
+  padding: 50px 0 130px 0;
+}
+footer .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+footer .container .foot {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .foot .copyright {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: gray;
+}
+footer .container .foot .copyright i {
+  color: red;
+}
+footer .container .foot .copyright a {
+  text-decoration: none;
+  color: red;
+}
+footer .container .foot .icons {
+  display: flex;
+  gap: 20px;
+}
+footer .container .foot .icons i {
+  transition: all 0.4s ease-out;
+}
+footer .container .foot .icons i:hover {
+  cursor: pointer;
+  color: red;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  nav .container1 {
+    padding: 0 20px;
+  }
+  nav .container1 .nav1 {
+    width: 100%;
+  }
+  nav .container1 .nav1 .home {
+    display: none;
+  }
+  nav .container1 .nav2 {
+    width: 100%;
+    display: flex;
+  }
+  header {
+    width: 100%;
+  }
+  header .container .head {
+    width: 100%;
+  }
+  .sect1 {
+    width: 100%;
+  }
+  .sect1 .container .arrival {
+    width: 100%;
+  }
+  .sect1 .container .thermo {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .sect1 .container .thermo .ball {
+    width: 48%;
+  }
+  .sect1 .container .thermo .ball .photo {
+    width: 100%;
+  }
+  .sect1 .container .thermo .ball .photo img {
+    width: 100%;
+  }
+  .sect2 {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .sect2 .picture1 {
+    width: 48%;
+  }
+  .sect2 .picture1 img {
+    width: 100%;
+  }
+  .sect2 .picture2 {
+    width: 48%;
+  }
+  .sect2 .picture2 img {
+    width: 100%;
+  }
+  .sect2 .picture3 {
+    width: 100%;
+    flex-direction: row;
+  }
+  .sect2 .picture3 div {
+    width: 48%;
+    margin-top: 20px;
+  }
+  .sect2 .picture3 div img {
+    width: 100%;
+  }
+  .sect3 {
+    width: 100%;
+  }
+  .sect3 .container .product {
+    width: 100%;
+  }
+  .sect3 .container .product .popular {
+    width: 100%;
+  }
+  .sect3 .container .product .gloves {
+    flex-wrap: wrap;
+  }
+  .sect3 .container .product .gloves .item {
+    width: 48%;
+  }
+  .sect3 .container .product .view {
+    width: 100%;
+  }
+  .sect4 {
+    width: 100%;
+  }
+  .sect5 {
+    width: 100%;
+  }
+  .sect6 {
+    width: 100%;
+  }
+  .sect6 .container .secure {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .sect6 .container .secure div {
+    width: 45%;
+    margin-left: 15px;
+  }
+  .sect7 {
+    width: 100%;
+  }
+  .sect7 .container .info {
+    flex-wrap: wrap;
+  }
+  .sect7 .container .info .time {
+    width: 33%;
+  }
+  .sect7 .container .info .news {
+    width: 30%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .container .foot {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav .container1 {
+    padding: 0 20px;
+  }
+  nav .container1 .nav1 {
+    width: 100%;
+  }
+  nav .container1 .nav1 .home {
+    display: none;
+  }
+  nav .container1 .nav2 {
+    width: 100%;
+    display: flex;
+  }
+  header {
+    width: 100%;
+    padding: 50px 0;
+  }
+  header .container .head {
+    width: 100%;
+  }
+  header .container .head .watch {
+    display: none;
+  }
+  .sect1 {
+    width: 100%;
+  }
+  .sect1 .container .arrival {
+    width: 100%;
+  }
+  .sect1 .container .thermo {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sect1 .container .thermo .ball {
+    width: 100%;
+  }
+  .sect1 .container .thermo .ball .photo {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .sect1 .container .thermo .ball .photo img {
+    width: 100%;
+  }
+  .sect2 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sect2 .picture1 {
+    width: 100%;
+  }
+  .sect2 .picture1 img {
+    width: 100%;
+  }
+  .sect2 .picture2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .sect2 .picture2 img {
+    width: 100%;
+  }
+  .sect2 .picture3 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sect2 .picture3 div {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .sect2 .picture3 div img {
+    width: 100%;
+  }
+  .sect3 {
+    width: 100%;
+  }
+  .sect3 .container .product {
+    width: 100%;
+  }
+  .sect3 .container .product .popular {
+    width: 100%;
+  }
+  .sect3 .container .product .gloves {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sect3 .container .product .gloves .item {
+    width: 100%;
+  }
+  .sect3 .container .product .view {
+    width: 100%;
+  }
+  .sect4 {
+    width: 100%;
+  }
+  .sect4 .container .show {
+    flex-direction: column;
+  }
+  .sect4 .container .show .choice {
+    width: 100%;
+  }
+  .sect4 .container .show .rolex {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .sect5 {
+    width: 100%;
+  }
+  .sect5 .container .show {
+    flex-direction: column;
+  }
+  .sect5 .container .show .choice {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .sect5 .container .show .rolex {
+    width: 100%;
+  }
+  .sect6 {
+    width: 100%;
+  }
+  .sect6 .container .secure {
+    flex-direction: column;
+  }
+  .sect6 .container .secure div {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .sect7 {
+    width: 100%;
+  }
+  .sect7 .container .info {
+    flex-direction: column;
+  }
+  .sect7 .container .info .time {
+    width: 100%;
+  }
+  .sect7 .container .info .news {
+    width: 100%;
+    margin-top: 50px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .container .foot {
+    flex-direction: column;
+  }
+  footer .container .foot .copyright {
+    width: 100%;
+  }
+  footer .container .foot .icons {
+    justify-content: flex-end;
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
